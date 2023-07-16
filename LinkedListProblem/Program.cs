@@ -17,29 +17,33 @@ namespace LinkedListProblem
             {
                 Console.WriteLine("*****************************");
                 Console.WriteLine("1-Insertion");
-                Console.WriteLine("2-Adding at Particular Position");
+                Console.WriteLine("2-Removing First Element");
                 Console.WriteLine("Choose the above options ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("*****************************");
                 switch (option)
                 {
                     case 1:
-                        listData.Add(30);
                         listData.Add(56);
-                         listData.Add(70);
+                        listData.Add(30);
+                        listData.Add(70);
                         listData.Display();
                         Console.WriteLine("*****************************");
                         break;
                     case 2:
 
-                        listData.InsertAtPosition(2,56);
+                        listData.FirstRemove();
                         listData.Display();
                         Console.WriteLine("*****************************");
                         break;
 
                 }
 
-            } 
+
+
+
+            }
+
 
         }
     }
